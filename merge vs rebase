@@ -1,0 +1,12 @@
+So sánh Merged và Rebase
+Nếu so với rebase thì merge là cách có thể tích hợp với master với rất nhiều nhánh trong 1 lần . Tuy nhiên trường hợp tích hợp bằng merge thì những commit của branch sẽ hoàn toàn không được record lại . Do vậy nếu chúng ta muốn lưu lại một cách chuẩn xác flow của dự án thì Rebase là phương pháp nên được sử dụng
+
+
+
+Chú ý vào rebase, ta sẽ thấy commit của rebase nằm phía trên commit mới nhất của master. Còn ở merge, mọi người sẽ thấy commit của master nằm phía trên commit mới nhất của merge, ngoài ra một commit merge branch cũng được tạo ra.
+
+Ta sử dụng git rebase nếu như muốn các sự thay đổi thuộc về branch của mình luôn luôn là mới nhất. Và có thể log một cách có hệ thống dễ nhìn, dễ tracking sau này.
+
+Ta sử dụng git merge nếu muốn sắp xếp các commit theo mặc định. Nếu không biết về những gì mình làm trên branch đó thì dùng merge chắc chắn việc tracking sau này có thể tốn nhiều thời gian lần mò.
+
+
